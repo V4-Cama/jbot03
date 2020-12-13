@@ -1257,7 +1257,7 @@ class mainCog(commands.Cog):
 			command_list += ','.join(command[2]) + '\n'     #!설정확인
 			command_list += ','.join(command[3]) + '\n'     #!채널확인
 			command_list += ','.join(command[4]) + ' [채널명]\n'     #!채널이동
-			command_list += ','.join(command[5]) + ' ※ 관리자만 실행 가능\n'     #!소환
+			command_list += ','.join(command[5]) + '\n'     #!소환
 			command_list += ','.join(command[6]) + '\n'     #!불러오기
 			command_list += ','.join(command[7]) + '\n'     #!초기화
 			command_list += ','.join(command[8]) + '\n'     #!명치
@@ -1469,7 +1469,6 @@ class mainCog(commands.Cog):
 			return
 
 	################ 보탐봇 음성채널 소환 ################ 
-	@commands.has_permissions(manage_messages=True)
 	@commands.command(name=command[5][0], aliases=command[5][1:])
 	async def connectVoice_(self, ctx):
 		global basicSetting
