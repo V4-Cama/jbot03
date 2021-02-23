@@ -450,7 +450,7 @@ def init():
 		f = []
 
 	regenembed = discord.Embed(
-			title='----- 루나트라 불완전 리스폰 시간 -----',
+			title='----- 루나트라 네임드 리스폰 시간 -----',
 			description= ' ')
 	for i in range(len(regenTime)):
 		if outputTimeMin[i] == 0 :
@@ -536,7 +536,7 @@ async def dbSave():
 	
 	datelist = list(set(datelist1))
 
-	information1 = '----- V4 루나트라 불완전 젠시간 정보 -----\n'
+	information1 = '----- V4 루나트라 네임드 젠시간 정보 -----\n'
 	for timestring in sorted(datelist):
 		for i in range(bossNum):
 			if timestring == bossTime[i]:
@@ -1666,7 +1666,7 @@ class mainCog(commands.Cog):
 					tmp_boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-						title = "----- 컷시간 못딴 루나트라 불완전 -----",
+						title = "----- 컷시간 못딴 루나트라 네임드 -----",
 						description= tmp_boss_information[0],
 						color=0x0000ff
 						)
@@ -1681,7 +1681,7 @@ class mainCog(commands.Cog):
 					tmp_boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-					title = "----- 컷시간 못딴 루나트라 불완전 -----",
+					title = "----- 컷시간 못딴 루나트라 네임드 -----",
 					description= tmp_boss_information[0],
 					color=0x0000ff
 					)
@@ -2287,12 +2287,12 @@ class mainCog(commands.Cog):
 					tmp_boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-						title = "----- V4 루나트라 불완전 젠시간 정보 -----",
+						title = "----- V4 루나트라 네임드 젠시간 정보 -----",
 						description= boss_information[0],
 						color=0x0000ff
 						)
 				embed.add_field(
-						name="----- 컷시간 못딴 루나트라 불완전 -----",
+						name="----- 컷시간 못딴 루나트라 네임드 -----",
 						value= tmp_boss_information[0],
 						inline = False
 						)				
@@ -2305,7 +2305,7 @@ class mainCog(commands.Cog):
 					boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-						title = "----- V4 루나트라 불완전 젠시간 정보 -----",
+						title = "----- V4 루나트라 네임드 젠시간 정보 -----",
 						description= boss_information[0],
 						color=0x0000ff
 						)
@@ -2332,7 +2332,7 @@ class mainCog(commands.Cog):
 					tmp_boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-					title = "----- 컷시간 못딴 루나트라 불완전 -----",
+					title = "----- 컷시간 못딴 루나트라 네임드 -----",
 					description= tmp_boss_information[0],
 					color=0x0000ff
 					)
@@ -2489,7 +2489,7 @@ class mainCog(commands.Cog):
 				boss_information[0] = '``` ```'
 
 			embed = discord.Embed(
-					title = "----- V4 루나트라 불완전 젠시간 정보 -----",
+					title = "----- V4 루나트라 네임드 젠시간 정보 -----",
 					description= boss_information[0],
 					color=0x0000ff
 					)
@@ -2517,7 +2517,7 @@ class mainCog(commands.Cog):
 				tmp_boss_information[0] = '``` ```'
 
 			embed = discord.Embed(
-				title = "----- 컷시간 못딴 루나트라 불완전 -----",
+				title = "----- 컷시간 못딴 루나트라 네임드 -----",
 				description= tmp_boss_information[0],
 				color=0x0000ff
 				)
