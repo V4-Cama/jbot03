@@ -2617,7 +2617,7 @@ class mainCog(commands.Cog):
 				fixedboss_information[0] = '``` ```'
 	
 			embed = discord.Embed(
-					title = "----- 고 정 보 스 -----",
+					title = "----- 고정 필드보스 & 네임드 -----",
 					description= fixedboss_information[0],
 					color=0x0000ff
 					)
